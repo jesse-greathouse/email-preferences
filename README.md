@@ -7,7 +7,7 @@ It's not necessary to run the app, but since it is a working POC then it is poss
 
  - Clone the repository
 
-	$ git clone https://github.com/jesse-greathouse/email-preferences.git
+    $ git clone https://github.com/jesse-greathouse/email-preferences.git
 
  - Change to the app directory
 

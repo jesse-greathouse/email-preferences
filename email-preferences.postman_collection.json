@@ -1,0 +1,600 @@
+{
+	"info": {
+		"_postman_id": "5506171a-3d1e-4343-8d2a-35e076e15611",
+		"name": "email-preferences",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/user",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jesse.greathouse@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Jesse",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Greathouse",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/user",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/user/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "jesse.greathouse@hotmail.com",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Jesse",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "greathouse",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/user/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/user/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "newsletter",
+			"item": [
+				{
+					"name": "newsletter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/newsletter",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"newsletter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newsletter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Latest News",
+									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "latest-news",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "description",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/newsletter",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"newsletter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newsletter/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/newsletter/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"newsletter",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newsletter/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Breaking News",
+									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "breaking-news",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/newsletter/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"newsletter",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newsletter/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/newsletter/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"newsletter",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/post",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "newsletter_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "publish_date",
+									"value": "2020-06-16 18:04:33",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "This is a test",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/post",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/post/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "newsletter_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "publish_date",
+									"value": "2020-06-17 05:25:31",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "An updated test",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/post/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/post/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "subscription",
+			"item": [
+				{
+					"name": "subscription",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/subscription",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"subscription"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subscription",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "newsletter_id",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/subscription",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"subscription"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subscription/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/subscription/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"subscription",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subscription/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "newsletter_id",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/subscription/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"subscription",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "subscription/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{preferences-protocol}}://{{preferences-domain}}:{{preferences-port}}/subscription/1",
+							"protocol": "{{preferences-protocol}}",
+							"host": [
+								"{{preferences-domain}}"
+							],
+							"port": "{{preferences-port}}",
+							"path": [
+								"subscription",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

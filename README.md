@@ -1,6 +1,36 @@
 # Email Preferences
 A simple demonstration of how to manage email subscriptions with PHP and MySQL.
 
+For the demonstration, I wanted to make sure that my code was a working proof of concept. I made the examples with the [Lumen PHP micro-framework](https://lumen.laravel.com/).
+
+It's not necessary to run the app, but since it is a working POC then it is possible:
+
+ - Clone the repository
+
+	$ git clone https://github.com/jesse-greathouse/email-preferences.git
+
+ - Change to the app directory
+
+		$ cd email-preferences
+
+ - Install dependencies
+
+		$ composer install
+
+ - Run migrations to set up the database
+
+		$ php artisan migrate
+
+ - Seed the database with fake data
+
+		$ php artisan seed
+
+ - Run the app
+
+		$ php -S localhost:8000 -t public
+
+I have included a [postman](https://www.postman.com/) configuration for  [environment](https://github.com/jesse-greathouse/email-preferences/blob/master/email-preferences-local.postman_environment.json) and [collection](https://github.com/jesse-greathouse/email-preferences/blob/master/email-preferences.postman_collection.json) that could be imported to browse the API.
+
 ## Task: Describe the major API endpoints
 The four major Api endpoints are:
 
